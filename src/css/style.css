@@ -6,6 +6,10 @@
 body{
     font-family: "Roboto", sans-serif;
 }
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
 .header-text{
     display: flex;
     justify-content: center;
@@ -32,6 +36,7 @@ body{
     color: gray;
     transition: .6s;
     font-size: 17px;
+    cursor: pointer;
 }
 .header-icons{
     list-style: none;
@@ -63,6 +68,7 @@ body{
     background-color: crimson;
     transition: .6s;
     color: black;
+    cursor: pointer;
 }
 .boost-block{
     margin-top: 53px;
@@ -82,10 +88,7 @@ body{
 }
 .col-3{
     width: 25%;
-    background-color: black;
-    padding: 0 15px;
-    display: flex;
-    justify-content: center;
+    padding: 0 170px;
 }
 /* boost */
 
@@ -94,13 +97,12 @@ body{
 }
 /* shop */
 .shop-title{
-    font-size: 32px;
-    line-height: 36px;
-    
+    font-size: 25px;
+    line-height: 30px;
 }
 .shop-text{
-    font-size: 15px;
-    line-height: 19px;
+    font-size: 18px;
+    line-height: 23px;
     padding: 20px 0;
 }
 .shop-block{
@@ -112,25 +114,15 @@ body{
     padding: 0 15px;
     text-align: center;
 }
-.shop-item-1{
-    background: url(/src/images/shop/skate.png) no-repeat;
-    height: 100vh;
-    color: white;
-    position: relative;
-}
-.shop-item-2{
-    background: url(/src/images/shop/samokat.png) no-repeat;
-    height: 100vh;
-    color: white;
+.shop-item{
     position: relative;
 }
 .shop-content{
     position: absolute;
-    left: 50%;
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    display: flex;
+    color: white;
 }
 /* shop */
 
@@ -142,11 +134,13 @@ body{
     height: 100vh;
     text-align: center;
     top: 44px;
+    background-size: 100%;
 }
 .electric-text{
     font-size: 15px;
     line-height: 19px;
 }
+
 .electric-title{
     font-size: 45px;
     line-height: 51px;
@@ -168,6 +162,7 @@ body{
     background-color: crimson;
     transition: .6s;
     color: black;
+    cursor: pointer;
 }
 /* electric */
 
@@ -201,6 +196,7 @@ body{
     background-color: crimson;
     transition: .6s;
     color: black;
+    cursor: pointer;
 }
 .samokat-text{
     font-size: 15px;
@@ -217,17 +213,25 @@ body{
     font-size: 25px;
     line-height: 30px;
     padding: 15px 0;
+    color: white;
 }
 .plus-text{
     font-size: 18px;
     line-height: 23px;
     text-decoration: none;
-    color: gray;
-    padding-bottom: 55px;
+    color: white;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
 }
 .plus-content{
-    top: 100%;
-
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.plus-item{
+    position: relative;
 }
 .video-item{
     margin: 55px 0;
@@ -235,12 +239,30 @@ body{
 .col-2{
     width: 15%;
     padding: 0 15px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
 }
-.slider-item {
+.slider-title{
+    justify-content: center;
+    display: flex;
     text-align: center;
+    font-size: 32px;
+    line-height: 36px;
+    padding-bottom: 66px;
+    position: relative;
+}
+.slider-title::after{
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 70px;
+    height: 2px;
+    background-color:#CFCFCF;
+    right: 0;
+    margin: 0 auto;
+    display:block;
+}
+.slider-item{
+    width: 14.2%;
 }
 .slider-price{
     color: #FF4A32;
@@ -257,6 +279,7 @@ a{
     height: 66px;
     background-color: white;
     box-shadow: 2px 0 10px rgba(41, 44, 61, 0.34);
+    margin-bottom: 50px;
 }
 .go-item{
     width: 87px;
@@ -325,5 +348,7 @@ a{
     padding: 0 140px;
     margin-bottom: 27px;
 }
-
-
+.footer-icon:hover{
+    font-size: 17px;
+    transition: .6s;
+}
