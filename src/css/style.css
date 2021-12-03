@@ -7,7 +7,7 @@ body{
     font-family: "Roboto", sans-serif;
 }
 .container{
-    width: 100%;
+    width: 1440px;
     margin: 0 auto;
 }
 .header-text{
@@ -42,6 +42,9 @@ body{
     list-style: none;
     color: black;
     display: flex;
+}
+.header-icon{
+    padding: 0 7px;
 }
 
 /* header */
@@ -88,12 +91,16 @@ body{
 }
 .col-3{
     width: 25%;
-    padding: 0 170px;
+    padding: 0 15px;
 }
 /* boost */
+.brands{
+    background-color: black;
+}
 
 .item{
     margin-top: 18px;
+    text-align: center;
 }
 /* shop */
 .shop-title{
@@ -107,15 +114,17 @@ body{
 }
 .shop-block{
     text-align: center;
-    padding: 0 52px;
+    padding: 52px 0;
+    margin-bottom: 20px;
 }
 .col-6{
     width: 50%;
     padding: 0 15px;
-    text-align: center;
 }
 .shop-item{
     position: relative;
+    display: flex;
+    justify-content: space-around;
 }
 .shop-content{
     position: absolute;
@@ -130,11 +139,11 @@ body{
 
 /* electric */
 .electric-block{
-    background: url(/src/images/electric/squad.png) no-repeat;
-    height: 100vh;
+    background: url(/src/images/electric/squad.png) top left/100% 100% no-repeat;
+    height: 736px;
     text-align: center;
-    top: 44px;
     background-size: 100%;
+    padding-top: 44px;
 }
 .electric-text{
     font-size: 15px;
@@ -170,16 +179,24 @@ body{
 
 
 /* samokat */
+.samokat{
+    padding: 44px 0;
+}
+.samokat-item img{
+    width: 100%;
+}
 .col-4{
-    width: 33%;
-    padding: 44px 15px;
-    display: flex;
-    justify-content: space-around;
+    width: 33.3%;
+    padding: 0px 15px;
 }
 .samokat-title{
     font-size: 32px;
     line-height: 38px;
-    margin: 111px 0;
+    padding-top: 77px;
+}
+.samokat-block{
+    padding-top: 77px;
+
 }
 .samokat-btn{
     font-size: 15px;
@@ -201,13 +218,28 @@ body{
 .samokat-text{
     font-size: 15px;
     line-height: 22px;
-    padding: 21px 0;
+    padding-bottom: 17px;
 }
 /* samokat */
-
-.plus-block{
+.plus{
     display: flex;
     justify-content: space-around;
+}
+.plus-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 480px;
+    width: 480px;
+}
+.plus-item-1{
+    background: url(/src/images/plus/convers.png) top left/100% 100% no-repeat;
+}
+.plus-item-2{
+    background:url(/src/images/plus/shlem.png) top left/100% 100% no-repeat;
+}
+.plus-item-3{
+    background: url(/src/images/plus/kare.png) top left/100% 100% no-repeat;
 }
 .plus-title{
     font-size: 25px;
@@ -220,21 +252,17 @@ body{
     line-height: 23px;
     text-decoration: none;
     color: white;
-    padding-top: 15px;
+    margin-top: 15px;
     display: flex;
     justify-content: center;
 }
-.plus-content{
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-}
-.plus-item{
-    position: relative;
-}
+
+
 .video-item{
     margin: 55px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 .col-2{
     width: 15%;
@@ -261,12 +289,12 @@ body{
     margin: 0 auto;
     display:block;
 }
-.slider-item{
-    width: 14.2%;
+.slider-text{
+    color: #FF4A32;
 }
 .slider-price{
-    color: #FF4A32;
-    text-decoration: none;
+    color: black;
+    padding-left: 35px;
 }
 .slider-link{
     color: #FF4A32;
@@ -281,24 +309,34 @@ a{
     box-shadow: 2px 0 10px rgba(41, 44, 61, 0.34);
     margin-bottom: 50px;
 }
-.go-item{
-    width: 87px;
-    height: 87px;
-}
 .go{
     width: 100%;
-    height: 370px;
-    padding: 28px 0 ;
+    height: 340px;
+    padding: 28px 0;
     background-color: black;
     color: white;
 }
 .go-content{
     text-align: center;
 }
+.go-block{
+    display: flex;
+    justify-content: space-around;
+}
+.go-item{
+    text-align: center;
+}
+.go-text{
+    padding: 20px 0;
+}
+
 /*go*/
 
 
 /*footer*/
+.footer{
+    background-color: #F7F7F7;
+}
 .footer-link{
     font-size: 13px;
     line-height: 21px;
@@ -328,10 +366,8 @@ a{
 .footer-menu-2{
     padding-top: 19px;
 }
-.footer-block{
-    background-color: #F7F7F7;
-}
-a{
+
+span{
     color:#FF4A32 ;
 }
 .footer-block-2{
@@ -351,4 +387,7 @@ a{
 .footer-icon:hover{
     font-size: 17px;
     transition: .6s;
+}
+a{
+    color:#FF4A32;
 }
